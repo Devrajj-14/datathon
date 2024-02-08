@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Exquisite Jewels - Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="threejs-container"></div> <!-- Container for 3D animation -->
+    
+    <main class="login-main">
+        <section class="login-section">
+            <div class="login-container">
+                <h1>Welcome to Exquisite Jewels</h1>
+                <p>Please sign in to continue</p>
+               <!-- Inside index.html -->
+<form id="login-form">
+    <input type="email" id="email" placeholder="Email" required="True">
+    <input type="password" id="password" placeholder="Password" required="True">
+    <button type="submit" class="login-button">Login</button>
+</form>
+
+<script>
+    document.getElementById('login-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the default form submission
+        // Here you would validate your login credentials
+        // Since we are not validating, we'll just redirect
+        window.location.href = 'index2.html';
+    });
+</script>
+
+                <!-- You can add a link for new users to register here if needed -->
+
+                
+
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
